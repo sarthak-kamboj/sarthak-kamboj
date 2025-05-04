@@ -18,35 +18,41 @@
 
 ## 📌 Overview
 
-This repository contains:
-- ✅ My updated **ATS-friendly resume**
-- 💼 A tailored **cover letter** for specific roles
-- ⚙️ A **Python script** that dynamically renders both using a `data.yaml` configuration
-- 📁 Sample job description and template matching
-- ✨ Styled with clarity, structure, and automation in mind
+This project generates a clean, structured resume and cover letter using Python, Jinja2 templates, and a YAML file. Designed to be ATS-friendly, customizable, and easily maintained.
 
 ---
 
 ## ✨ Features
 
-- 🔄 Auto-generate Resume & Cover Letter from YAML
-- 🧠 Clean structure using **Jinja2 Templates**
-- 📦 Modular files: `resume.md`, `cover_letter.md`, `data.yaml`
-- 🧰 Full-stack ready: Flask, SQL, Power BI, JavaScript projects
-- 🎯 Tailored output with "Did X for Y to increase Z%" impact statements
+- 🧠 Clean Jinja2 templates
+- ⚙️ YAML-based personal data
+- 📝 Outputs Markdown-based resume & cover letter
+- 🎯 Built-in "Did X for Y to increase Z%" statements
+- 📦 Easily clone and modify for any role
+
+---
+
+## 🛠 Technologies Used
+
+- 🐍 Python
+- 📄 Jinja2 Templates
+- ⚙️ YAML Configuration
+- 📊 Power BI, SQL
+- 🌐 HTML, CSS, JavaScript
+- 🗃 PostgreSQL, SSMS
 
 ---
 
 ## 📂 Folder Structure
 
 .
-├── resume.md # Final resume (generated)
-├── cover_letter.md # Final cover letter (generated)
-├── data.yaml # Personal & job-specific metadata
+├── resume.md # Final resume
+├── cover_letter.md # Final cover letter
+├── data.yaml # User data & job details
 ├── templates/
 │ ├── resume_template.j2
 │ └── cover_letter_template.j2
-├── resume.py # Python generator script
+├── resume.py # Python generator
 └── README.md # This file
 
 yaml
@@ -55,15 +61,43 @@ Edit
 
 ---
 
-## ⚙️ How It Works
+## 🚀 Projects
+
+### 🔧 Python-Based Data Validator  
+Built an automation tool to cross-check SQL Server and PostgreSQL records at scale. Supports schema-level and data-level comparison with logs and delta reports.
+
+### 📊 Power BI Sales Dashboard  
+Designed KPI dashboards using DAX, SQL Server, and slicers. Used by sales managers and product teams to adjust strategies in real-time.
+
+### 🌐 Full-Stack Migration Web Tool  
+Developed using Flask, PostgreSQL, HTML/CSS. Allowed internal dev teams to migrate and manage repositories securely and efficiently.
+
+### 🗂 Issue Tracker & Logger  
+Personal project to manage bugs, feedback, and tasks. Real-time filter, user roles, and Bootstrap UI for simplicity.
+
+### 🧠 Resume + Cover Letter Generator (This Repo)  
+Automates generation of career documents. Built to save time and maintain formatting integrity across roles.
+
+---
+
+## 🏆 Certifications
+
+- ✅ Microsoft Certified: Data Analyst Associate  
+- ✅ Google Project Management – Foundations  
+- ✅ Coursera: Full Stack Web Dev with Flask and JS
+
+---
+
+## 📝 Blogs
+
+- [🔗 Power BI Performance Tuning Best Practices](#)  
+- [🔗 Scalable Flask Architecture for Web APIs](#)  
+- [🔗 Writing ATS-Optimized Resumes in Markdown](#)
+
+---
+
+## 💡 How to Use
 
 ```bash
-# Step 1: Install requirements
 pip install jinja2 pyyaml
-
-# Step 2: Run the generator
 python resume.py
-
-# Step 3: Get your files
-✅ resume.md
-✅ cover_letter.md
